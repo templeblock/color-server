@@ -1,0 +1,444 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>WQPortraitClass</class>
+ <widget class="QMainWindow" name="WQPortraitClass">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1044</width>
+    <height>529</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>WQPortrait</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <layout class="QHBoxLayout" name="horizontalLayout">
+    <item>
+     <widget class="QScrollArea" name="scrollArea_2">
+      <property name="widgetResizable">
+       <bool>true</bool>
+      </property>
+      <widget class="QWidget" name="scrollAreaWidgetContents_2">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>403</width>
+         <height>452</height>
+        </rect>
+       </property>
+      </widget>
+     </widget>
+    </item>
+    <item>
+     <widget class="QScrollArea" name="scrollArea">
+      <property name="widgetResizable">
+       <bool>true</bool>
+      </property>
+      <widget class="QWidget" name="scrollAreaWidgetContents">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>403</width>
+         <height>452</height>
+        </rect>
+       </property>
+      </widget>
+     </widget>
+    </item>
+    <item>
+     <layout class="QGridLayout" name="gridLayout">
+      <property name="bottomMargin">
+       <number>0</number>
+      </property>
+      <item row="4" column="1">
+       <widget class="QLabel" name="label">
+        <property name="text">
+         <string>抽象</string>
+        </property>
+       </widget>
+      </item>
+      <item row="11" column="2">
+       <spacer name="verticalSpacer">
+        <property name="orientation">
+         <enum>Qt::Vertical</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>20</width>
+          <height>40</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item row="4" column="2">
+       <widget class="QSpinBox" name="spinBox_abst">
+        <property name="minimum">
+         <number>2</number>
+        </property>
+        <property name="maximum">
+         <number>12</number>
+        </property>
+        <property name="value">
+         <number>6</number>
+        </property>
+       </widget>
+      </item>
+      <item row="5" column="1">
+       <widget class="QLabel" name="label_2">
+        <property name="text">
+         <string>湿画</string>
+        </property>
+       </widget>
+      </item>
+      <item row="5" column="2">
+       <widget class="QSpinBox" name="spinBox_wet">
+        <property name="minimum">
+         <number>5</number>
+        </property>
+        <property name="maximum">
+         <number>40</number>
+        </property>
+        <property name="value">
+         <number>10</number>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="0">
+       <spacer name="horizontalSpacer">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="sizeType">
+         <enum>QSizePolicy::Maximum</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>40</width>
+          <height>20</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item row="6" column="2">
+       <widget class="QDoubleSpinBox" name="doubleSpinBox_darken">
+        <property name="minimum">
+         <double>1.000000000000000</double>
+        </property>
+        <property name="maximum">
+         <double>5.000000000000000</double>
+        </property>
+        <property name="singleStep">
+         <double>0.300000000000000</double>
+        </property>
+        <property name="value">
+         <double>2.500000000000000</double>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="1" colspan="2">
+       <widget class="QComboBox" name="comboBox_show">
+        <item>
+         <property name="text">
+          <string>结果</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>抽象</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>湿画</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>边缘加深</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>重叠与留白</string>
+         </property>
+        </item>
+       </widget>
+      </item>
+      <item row="6" column="1">
+       <widget class="QLabel" name="label_3">
+        <property name="text">
+         <string>边缘加深</string>
+        </property>
+       </widget>
+      </item>
+      <item row="7" column="1">
+       <widget class="QLabel" name="label_5">
+        <property name="text">
+         <string>粗糙与紊流</string>
+        </property>
+       </widget>
+      </item>
+      <item row="7" column="2">
+       <widget class="QDoubleSpinBox" name="doubleSpinBox_pigment">
+        <property name="minimum">
+         <double>1.000000000000000</double>
+        </property>
+        <property name="maximum">
+         <double>6.000000000000000</double>
+        </property>
+        <property name="singleStep">
+         <double>0.200000000000000</double>
+        </property>
+        <property name="value">
+         <double>1.600000000000000</double>
+        </property>
+       </widget>
+      </item>
+      <item row="10" column="2">
+       <widget class="QPushButton" name="pushButton">
+        <property name="text">
+         <string>视频处理</string>
+        </property>
+       </widget>
+      </item>
+      <item row="9" column="2">
+       <widget class="QCheckBox" name="dry_brush">
+        <property name="text">
+         <string>枯笔</string>
+        </property>
+       </widget>
+      </item>
+      <item row="9" column="1">
+       <widget class="QCheckBox" name="checkBox_white">
+        <property name="text">
+         <string>留白</string>
+        </property>
+       </widget>
+      </item>
+      <item row="10" column="1">
+       <widget class="QPushButton" name="pushButton_2">
+        <property name="text">
+         <string>图像处理</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1044</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuFile">
+    <property name="title">
+     <string>File</string>
+    </property>
+    <addaction name="actionOpen"/>
+   </widget>
+   <addaction name="menuFile"/>
+  </widget>
+  <widget class="QToolBar" name="mainToolBar">
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+  <action name="actionOpen">
+   <property name="text">
+    <string>Open</string>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources>
+  <include location="wqportrait.qrc"/>
+ </resources>
+ <connections>
+  <connection>
+   <sender>actionOpen</sender>
+   <signal>triggered()</signal>
+   <receiver>WQPortraitClass</receiver>
+   <slot>open()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>185</x>
+     <y>213</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>spinBox_abst</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>WQPortraitClass</receiver>
+   <slot>abstraction_level(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>1033</x>
+     <y>90</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>1001</x>
+     <y>338</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>spinBox_wet</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>WQPortraitClass</receiver>
+   <slot>wet_level(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>994</x>
+     <y>109</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>910</x>
+     <y>242</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>doubleSpinBox_darken</sender>
+   <signal>valueChanged(double)</signal>
+   <receiver>WQPortraitClass</receiver>
+   <slot>darken_level(double)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>1033</x>
+     <y>142</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>873</x>
+     <y>175</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>comboBox_show</sender>
+   <signal>currentIndexChanged(int)</signal>
+   <receiver>WQPortraitClass</receiver>
+   <slot>show_result(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>931</x>
+     <y>53</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>887</x>
+     <y>75</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton</sender>
+   <signal>clicked()</signal>
+   <receiver>WQPortraitClass</receiver>
+   <slot>video_process()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>1033</x>
+     <y>197</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>866</x>
+     <y>274</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>doubleSpinBox_pigment</sender>
+   <signal>valueChanged(double)</signal>
+   <receiver>WQPortraitClass</receiver>
+   <slot>pigment_level(double)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>982</x>
+     <y>159</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>938</x>
+     <y>483</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>dry_brush</sender>
+   <signal>stateChanged(int)</signal>
+   <receiver>WQPortraitClass</receiver>
+   <slot>is_dry(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>963</x>
+     <y>182</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>858</x>
+     <y>209</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>checkBox_white</sender>
+   <signal>stateChanged(int)</signal>
+   <receiver>WQPortraitClass</receiver>
+   <slot>is_white(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>900</x>
+     <y>180</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>849</x>
+     <y>314</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_2</sender>
+   <signal>clicked()</signal>
+   <receiver>WQPortraitClass</receiver>
+   <slot>image_process()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>925</x>
+     <y>214</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>848</x>
+     <y>385</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>open()</slot>
+  <slot>abstraction_level(int)</slot>
+  <slot>wet_level(int)</slot>
+  <slot>test()</slot>
+  <slot>darken_level(double)</slot>
+  <slot>is_white(int)</slot>
+  <slot>show_result(int)</slot>
+  <slot>pigment_level(double)</slot>
+  <slot>is_dry(int)</slot>
+  <slot>video_process()</slot>
+  <slot>image_process()</slot>
+ </slots>
+</ui>
